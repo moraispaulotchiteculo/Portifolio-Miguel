@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.conteinercabeca{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+    transition: scale 0.3s;
+}
+li:hover{
+    scale: 1.5;
+}
+.conteinercabeca ul li > a{
+    text-decoration: none;
+    color: white;
+    
+}
+.botao{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border-color: none;
+    background-color: #00ff08;
+    transition: scale 0.3s;
+    
+}
+.botao2{
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    border-color: none;
+    background-color: #00ff08;
+    transition: scale 0.3s;
+    
+}
+.botao3{
+    width: 100px;
+    border-radius: 50px;
+    border-color: none;
+    background-color: #00ff08;
+    transition: scale 0.3s;
+    margin-top: 5px;
+    
+}
+.botao:hover, .botao2:hover, .botao3:hover{
+    scale: 1.2;
+}
+
+
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    
+    
+}
+.apresentacao p {
+    text-align: justify;
+    margin: 10px 0;
+}
+.apr{
+    margin-left: 20px;
+}
+
+#pessoa{
+    position: relative;
+    animation: mover 2s  ease-in-out infinite alternate;
+}
+
+@keyframes mover{
+    0%{
+        top:0px;
+    }
+
+    100%{
+        top: 40px
+    }
+
+}
+span{
+    color: #00ff08;
+}
+.texto{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    
+    
+}
+.contflex div{
+    border: 1px solid white;
+    text-align: center;
+    width: 250px;
+    
+}
+h3{
+    margin-bottom: 5px;
+}
+
+.contflex p{
+    padding: 5px;
+}
+.aprese{
+    display: flex;
+    
+    gap: 55px;
+}
+#fotomiguel{
+    width: 300px;
+    margin-left: 20px;
+}
+.textoap{
+    margin-top: 60PX;
+    width: 500px;
+    
+}
+.textoap h2 {
+    line-height: 30px;
+    
+}
+.apresentacao2{
+    margin-top: 10%;
+    box-shadow: 5px 0px 8px rgba(107, 106, 106, 0.377);
+    margin-top: 15px;
+    padding: 20px 0;
+    
+}
+.apresentacao2 p{
+    margin: 10px 0;
+    text-align: justify;
+}
+section{
+    margin: 30px 0px;
+}
+section#portfolio{
+    text-align: center;
+    box-shadow: 5px 0px 8px rgba(107, 106, 106, 0.377);
+    padding: 50px 0;
+
+}
+
+section#portfolio p{
+    margin-bottom: 20px;
+}
+#portbox{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+#portbox div.box{
+    width: 300px;
+    height: 400px;
+    background-image: url(images/imagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition:  background-position  1s;
+    position: relative;
+    border-radius: 30px;
+    
+    
+     
+}
+#portbox div.box:hover{
+    background-position: 100% 100%;
+}
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 30px;
+}
+.fundo:hover{
+    opacity: 1;
+}
+#apoio h2 , p{
+    text-align: center; 
+   
+    
+}
+    
+#apoio p{
+    margin-bottom: 40px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    border: none;
+    margin: 3px 0px;
+}
+
+textarea{
+    resize: none;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+}
+::placeholder{
+    color: rgb(149, 151, 151);
+}
+
+#fim{
+    color: #00ff08;
+    margin-left: 50px;
+}
+hr{
+    width: 900px;
+    margin: 0px auto ;
+}
